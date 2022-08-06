@@ -1,9 +1,5 @@
 import requests
 from bs4 import BeautifulSoup
-import obj_comparison
-import time
-
-WEBHOOK_URL = "https://discordapp.com/api/webhooks/825435452256550922/VW8rXr0vWCXiI9GzF2iP12v_87OMrndekWOcH-0gODu5J4FIsypXYTLcfGjVrXQ_gnql"
 
 class Roadmap:
     SELECTOR = "#rt-mainbody > div"
