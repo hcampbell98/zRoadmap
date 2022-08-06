@@ -5,6 +5,7 @@ import requests
 
 #read webhook url from webhook.txt
 WEBHOOK_URL = open('webhook.txt', 'r').read()
+SLEEP_TIME = 60 * 60 # 1 hour
 
 last_roadmap = None
 
@@ -45,4 +46,4 @@ while True:
 
             last_roadmap = new_roadmap
         print("Done, sleeping...")
-    time.sleep(60 * 60) #sleep for an hour
+    time.sleep(SLEEP_TIME) #sleep for an hour
